@@ -36,16 +36,15 @@ Installing Node.js® and NPM is pretty straightforward on the Mac. You just need
   * **Complete**
   <br>
 ![](node-install6.png)
-3. **Add **`/usr/local/bin`** to $PATH.** In order to run node, you need to make sure that your computer can find it. This involves adding the path to the Node program to the "PATH" environment variable. First, you should see if the path is already in place.
+3. **Add `/usr/local/bin` to $PATH.** In order to run node, you need to make sure that your computer can find it. This involves adding the path to the Node program to the "PATH" environment variable. First, you should see if the path is already in place.
   * **Open terminal**. This is a Mac program and is located in the Utilities folder in the Applications folder.
-  * **In terminal type **`echo $PATH`** and hit return.** See if the path `/usr/local/bin/` appears in the Output. If it's there, then go to step 4. If not, continue
+  * **In terminal type `echo $PATH` and hit return.** See if the path `/usr/local/bin/` appears in the Output. If it's there, then go to step 4. If not, continue
    <br>
 ![](node-install7.png)
   * If you don't see `/usr/local/bin` in the Path type the following in Terminal:<br> 
   
-    `export PATH=$PATH:/usr/local/bin/`
+    `export PATH=$PATH:/usr/local/bin/
+    source $HOME/.bash_profile`
     
-    `source $HOME/.bash_profile`
-    
-    ![](node-install2.png)
+    ![](node-install8.png)
 ## Test it!
