@@ -48,3 +48,5 @@ Installing Node.js® and NPM is pretty straightforward on the Mac. You just need
     
     ![](node-install8.png)
 ## Test it!
+* **Test Node.** To see if Node is installed, type `node -v` in Terminal. This should print the version number so you'll see something like this `v0.10.31`.
+* * **Test NPM.** To see if NPM is installed, type `npm -v` in Terminal. This should print the version number so you'll see something like this `1.4.23`
