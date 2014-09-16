@@ -1,14 +1,14 @@
 #Installing Node.js® and NPM
 
 ## What's Node.js®  and NPM?
-Node.js® is a JavaScript-based environment which you can use to create web-servers and networked applications. You can also use it to perform helpfule tasks on your computer such as concatentating and minifying JavaScript files and compiling Sass files into CSS.
+Node.js® is a JavaScript-based environment which you can use to create web-servers and networked applications. You can also use it to perform helpful tasks on your computer such as concatentating and minifying JavaScript files and compiling Sass files into CSS.
 
-NPM is a "package manager" that makes it easy to install Node "packages." A package is just a code library that extends Node by adding useful features. For example, the "request" package simplifies the process of making HTTP so you can easily request web resources from other sites.
+NPM is a "package manager" that makes installind Node "packages" fast and easy. A package is just a code library that extends Node by adding useful features. For example, the "request" package simplifies the process of making HTTP request so you can easily get web resources from other sites.
 
 NPM is installed when you install Node.js®
 
 ## Prerequisites
-* **You should have some familiarity with the Mac Terminal,** since you'll need to use it to finish configuring the installation and test it. You'll also need the Terminal to use Node.js and NPM. The Terminal application is located in in the Utilities folder in the Applcations folder.
+* **You should have some familiarity with the Mac Terminal application** since you'll need to use it to install and test Node and NPM. You'll also need the Terminal to use Node.js and NPM. The Terminal application is located in the Utilities folder in the Applications folder.
 * **Dependencies.** There's some software you need installed before you install Node. In addition, you need to install these in a specific order:
   1. **XCode.** Install Apple's XCode development software, which you can find in the Apple App Store. 
   2. **Homebrew**. Homebrew is a package manager for the Mac -- it makes installing most open source sofware as simple as writing `brew install node`. You can learn more about Homebrew at the [Homebrew website](http://brew.sh/). To install Homebrew you also need to install A
@@ -32,6 +32,6 @@ New versions of Node and NPM come out frequently. You can also use Homebrew to u
 `brew upgrade node`
 
 ## How to Uninstall Node and NPM
-Again, you can use Homebrew to uninstall packages that it installed:
+You can use Homebrew to uninstall packages that it installed:
 
 `brew uninstall node`
