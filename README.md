@@ -30,9 +30,11 @@ Make sure you have Node and NPM installed by running simple commands to see what
 
 
 ## How to Update Node and NPM
-New versions of Node and NPM come out frequently. You can use Homebrew to update the software it installs:
+New versions of Node and NPM come out frequently. You can use Homebrew to update the software it installs.
 
-`brew upgrade node`
+1. Make sure Homebrew has the latest version of the Node package. In Terminal type 
+`brew update`
+2. Upgrade Node: `brew upgrade node`
 
 ## How to Uninstall Node and NPM
 You can use Homebrew to uninstall packages that it installed:
