@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/markdown');
+
+xhr.send({
+  "text": "Hello world github/linguist#1 **cool**, and #1!",
+  "mode": "markdown",
+});
+
+xhr.onload = function () {
+  document.write(this.responseText);
+}
+</script> 
+</body>
+</html>
