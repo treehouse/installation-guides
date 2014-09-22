@@ -1,4 +1,4 @@
-#Installing Node.js® and NPM
+# Installing Node.js® and NPM
 
 ## What's Node.js®  and NPM?
 Node.js® is a JavaScript-based environment which you can use to create web-servers and networked applications. You can also use it to perform helpful tasks on your computer such as concatentating and minifying JavaScript files and compiling Sass files into CSS.
