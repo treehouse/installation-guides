@@ -1,22 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title></title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<script>
-var xhr = new XMLHttpRequest();
-xhr.open('POST', '/markdown');
-
-xhr.send({
-  "text": "Hello world github/linguist#1 **cool**, and #1!",
-  "mode": "markdown",
-});
-
-xhr.onload = function () {
-  document.write(this.responseText);
-}
-</script> 
+<script src="js/stmd.js"></script>
+<script src="js/render.js"></script>
+</script>
 </body>
 </html>
