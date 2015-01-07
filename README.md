@@ -7,3 +7,4 @@ Installing development software can be confusing: often there are a lot of steps
 * [Node.js and NPM](node_mac/index.html)
 
 ## Windows Installation Guides
+* [Node.js and NPM](node_win/index.html)
