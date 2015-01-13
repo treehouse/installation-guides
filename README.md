@@ -8,3 +8,6 @@ Installing development software can be confusing: often there are a lot of steps
 
 ## Windows Installation Guides
 * [Node.js and NPM](node_win/index.html)
+
+## Linux Installation Guides
+* [Node.js and NPM](node_linux/index.html)
