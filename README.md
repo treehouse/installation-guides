@@ -5,9 +5,12 @@ Installing development software can be confusing: often there are a lot of steps
 
 ## Mac Installation Guides
 * [Node.js and NPM](node_mac/index.html)
+* [Treehouse VM](treehouse_vm/index.html)
 
 ## Windows Installation Guides
 * [Node.js and NPM](node_win/index.html)
+* [Treehouse VM](treehouse_vm/index.html)
 
 ## Linux Installation Guides
 * [Node.js and NPM](node_linux/index.html)
+* [Treehouse VM](treehouse_vm/index.html)
