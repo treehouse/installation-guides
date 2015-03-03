@@ -26,7 +26,7 @@ Then proceed to install VirtualBox as you would any other software.
 
 Vagrant is a piece of software used to control and install virtual machines. Download the latest version of Vagrant and install it as you would any other piece of software for your computer:
 
-### [Vagrant Downloads]
+### [Vagrant Downloads](https://www.vagrantup.com/downloads.html)
 
 Once you have finished this step, **please reboot your computer**.
 
@@ -34,7 +34,7 @@ Once you have finished this step, **please reboot your computer**.
 
 The final download necessary is the Treehouse VM specific to the course you are taking. Head over to the following site:
 
-[Treehouse VM Downloads](http://vm.teamtreehouse.com/)
+### [Treehouse VM Downloads](http://vm.teamtreehouse.com/)
 
 Select the course you are trying to follow and download the appropriate virtual machine. This will contain only a zip file. Once you have the zip file, unzip it and follow along with the rest of this tutorial.
 
