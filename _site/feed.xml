@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Treehouse Installation Guides</title>
+    <description>Installation guides for common application development tools.</description>
+    <link>treehouse.github.io/installation-guides//</link>
+    <atom:link href="treehouse.github.io/installation-guides//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 03 May 2015 08:01:00 -0700</pubDate>
+    <lastBuildDate>Sun, 03 May 2015 08:01:00 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+  </channel>
+</rss>
