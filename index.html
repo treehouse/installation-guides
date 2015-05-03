@@ -8,7 +8,7 @@ layout: default
   <li><h2>Windows</h2>
     <ul>
       {% for guide in site.windows %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ guide.url }}">{{ guide.title }}</a></li>
       {% endfor %}
     </ul>
   </li>
@@ -17,7 +17,7 @@ layout: default
   <li><h2>Mac</h2>
     <ul>
       {% for guide in site.mac %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ guide.url }}">{{ guide.title }}</a></li>
       {% endfor %}
     </ul>
   </li>
@@ -26,7 +26,7 @@ layout: default
   <li><h2>Linux</h2>
     <ul>
       {% for guide in site.linux %}
-        <li><a href="{{ guide.url }}">{{ guide.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ guide.url }}">{{ guide.title }}</a></li>
       {% endfor %}
     </ul>
   </li>
