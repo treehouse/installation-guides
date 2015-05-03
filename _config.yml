@@ -2,7 +2,7 @@
 title: Treehouse Installation Guides
 email: dave@teamtreehouse.com
 description: Installation guides for common application development tools. 
-# baseurl: "/installation-guides"
+baseurl: "/installation-guides"
 url: "treehouse.github.io/installation-guides/" # the base hostname & protocol for your site
 twitter_username: treehouse
 github_username:  treehouse
