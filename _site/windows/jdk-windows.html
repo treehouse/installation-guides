@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Installing Node.js® and NPM on Windows</title>
+  <title>Installing Java SE Development Kit on Windows</title>
   <meta name="description" content="Installation guides for common application development tools.">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
-  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/windows/node-windows.html">
+  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/windows/jdk-windows.html">
   <link rel="alternate" type="application/rss+xml" title="Treehouse Installation Guides" href="treehouse.github.io/installation-guides//installation-guides/feed.xml" />
 </head>
 
@@ -57,59 +57,40 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Installing Node.js® and NPM on Windows</h1>
+    <h1 class="post-title">Installing Java SE Development Kit on Windows</h1>
   </header>
 
   <article class="post-content">
-    <h2 id="whats-nodejs--and-npm">What’s Node.js®  and NPM?</h2>
-<p>Node.js® is a JavaScript-based environment which you can use to create web-servers and networked applications. You can also use it to perform helpful tasks on your computer such as concatenating and minifying JavaScript files and compiling Sass files into CSS.</p>
+    <h2 id="what-is-a-jdk">What is a JDK?</h2>
+<p>The Java SE Development Kit, or JDK, is an extended subset of tools that allow for developing applications for the Java programming language.</p>
 
-<p>NPM is a “package manager” that makes installing Node “packages” fast and easy. A package is just a code library that extends Node by adding useful features. For example, the “request” package simplifies the process of making HTTP requests so you can easily get web resources from other sites.</p>
-
-<p>NPM is installed when you install Node.js®</p>
-
-<h2 id="prerequisites">Prerequisites</h2>
-<ul>
-  <li><strong>You should have some familiarity with an application that lets you issue command line instructions.</strong> For example, the Windows Command Prompt, PowerShell, <a href="https://www.cygwin.com/">Cygwin</a>, or the Git shell (which you get when you install <a href="https://windows.github.com/">Github for Windows</a>). </li>
-</ul>
-
-<h2 id="installation-overview">Installation Overview</h2>
-<p>Installing Node.js® and NPM is pretty straightforward using the installer package avaialble from the Node.js web site.</p>
-
-<h2 id="installation-steps">Installation Steps</h2>
+<p>The installation process is very straight forward:</p>
 
 <ol>
-  <li><strong>Download the Windows installer from <a href="http://nodejs.org/download/">Nodejs.org</a>.</strong> <img src="imgs/node-win-nodejs.png" alt="" /></li>
-  <li><strong>Run the installer</strong> (the .msi file you downloaded in the previous step.)</li>
-  <li><strong>Follow the prompts in the installer</strong> (Accept the license agreement, click the NEXT button a bunch of times and accept the default installation settings). <br /> <img src="imgs/node-win-installer.png" alt="" /></li>
-  <li><strong>Restart your computer.</strong> You won’t be able to run Node.js until you restart your computer.</li>
+  <li>
+    <p>Navigate to the <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java SE Downloads page</a></p>
+  </li>
+  <li>Choose the JDK Download:
+    <ul>
+      <li><img src="imgs/jdk-point.png" alt="" /></li>
+    </ul>
+  </li>
+  <li>Agree to terms and download the appropriate version. <a href="https://support.microsoft.com/en-us/kb/827218">Not sure which version of Windows you are running</a>?
+    <ul>
+      <li><img src="imgs/jdk-agree-download-win.png" alt="" /></li>
+    </ul>
+  </li>
+  <li>Open the .exe file and run the installation accepting all defaults
+    <ul>
+      <li><img src="imgs/jdk-exe.png" alt="" /></li>
+      <li><img src="imgs/jdk-exe-options.png" alt="" /></li>
+      <li><img src="imgs/jdk-exe-dest-folder.png" alt="" /></li>
+    </ul>
+  </li>
 </ol>
 
-<h2 id="test-it">Test it!</h2>
-<p>Make sure you have Node and NPM installed by running simple commands to see what version of each is installed:</p>
-
-<ul>
-  <li><strong>Test Node.</strong> To see if Node is installed, open the Windows Command Prompt, Powershell or a similar command line tool, and type <code>node -v</code>. This should print the version number so you’ll see something like this <code>v0.10.35</code>.</li>
-  <li><strong>Test NPM.</strong> To see if NPM is installed, type <code>npm -v</code> in Terminal. This should print the version number so you’ll see something like this <code>1.4.28</code></li>
-  <li><strong>Create a test file and run it.</strong> A simple way to test that node.js works is to create a simple JavaScript file: name it hello.js, and just add the code <code>console.log('Node is installed!');</code>. To run the code simply open your command line program, navigate to the folder where you save the file and type <code>node hello.js</code>. This will start Node.js and run the code in the <code>hello.js</code> file. You should see the output <code>Node is installed!</code>.</li>
-</ul>
-
-<p><img src="imgs/node-win-verify.png" alt="" /></p>
-
-<h2 id="how-to-update-node-and-npm">How to Update Node and NPM</h2>
-<p>New versions of Node and NPM come out frequently. To install the updates, just <a href="http://nodejs.org/download/">download the installer</a> from the Nodejs.org site and run it again. The new version of Node.js and NPM will replace the older versions.</p>
-
-<h2 id="how-to-uninstall-node-and-npm">How to Uninstall Node and NPM</h2>
-<p>You uninstall Node.js and NPM the same as you would most all Windows software:</p>
-
-<ol>
-  <li>Open the Windows Control Panel</li>
-  <li>Choose the Programs and Features option</li>
-  <li>Click the “Uninstall a program”</li>
-  <li>Select Node.js, and click the Uninstall link.</li>
-</ol>
-
-<p><img src="imgs/node-win-uninstall.png" alt="" /></p>
+<h2 id="known-installation-issues">Known installation issues</h2>
+<p>There are currently no reported issues.  If you are having one, please report it in the <a href="http://teamtreehouse.com/forum/topic:java">Treehouse forum</a>.</p>
 
   </article>
 

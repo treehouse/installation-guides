@@ -9,9 +9,9 @@
   <title>Installing Node.js® and NPM on Linux</title>
   <meta name="description" content="Installation guides for common application development tools.">
 
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="treehouse.github.io/installation-guides//linux/node-linux.html">
-  <link rel="alternate" type="application/rss+xml" title="Treehouse Installation Guides" href="treehouse.github.io/installation-guides//feed.xml" />
+  <link rel="stylesheet" href="/installation-guides/css/main.css">
+  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/linux/node-linux.html">
+  <link rel="alternate" type="application/rss+xml" title="Treehouse Installation Guides" href="treehouse.github.io/installation-guides//installation-guides/feed.xml" />
 </head>
 
 
@@ -21,7 +21,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Treehouse Installation Guides</a>
+    <a class="site-title" href="/installation-guides/">Treehouse Installation Guides</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -35,7 +35,7 @@
       <div class="trigger">
         
           
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/installation-guides/about/">About</a>
           
         
           
@@ -71,20 +71,20 @@
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
   <li><strong>You should have some familiarity with the Linux terminal</strong> since you’ll need to use it to install and test Node and NPM. You’ll also need the terminal to use Node.js and NPM.</li>
-  <li><strong>Dependencies.</strong> You need to install a number of dependancies before you can install Node.js and NPM.
+  <li><strong>Dependencies.</strong> You need to install a number of dependancies before you can install Node.js and NPM. 
     <ol>
-      <li><strong>Ruby</strong> and <strong>GCC</strong>. You’ll need Ruby 1.8.6 or newer and GCC 4.2 or newer.
+      <li><strong>Ruby</strong> and <strong>GCC</strong>. You’ll need Ruby 1.8.6 or newer and GCC 4.2 or newer. 
         <ul>
-          <li>For <strong>Ubuntu</strong> or <strong>Debian</strong> based Linux distributions run the following command in your terminal <code>sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev</code> and select Y to continue and wait for the packages to be installed.</li>
-          <li>For <strong>Fedora</strong> based Linux distributions run the following command in your terminal application <code>sudo yum groupinstall 'Development Tools' &amp;&amp; sudo yum install curl git m4 ruby texinfo bzip2-devel curl-devel expat-devel ncurses-devel zlib-devel</code>and select Y to continue and wait for the packages to be installed.</li>
+          <li>For <strong>Ubuntu</strong> or <strong>Debian</strong> based Linux distributions run the following command in your terminal <code>sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev</code> and select Y to continue and wait for the packages to be installed.  </li>
+          <li>For <strong>Fedora</strong> based Linux distributions run the following command in your terminal application <code>sudo yum groupinstall 'Development Tools' &amp;&amp; sudo yum install curl git m4 ruby texinfo bzip2-devel curl-devel expat-devel ncurses-devel zlib-devel</code>and select Y to continue and wait for the packages to be installed.  </li>
         </ul>
       </li>
-      <li><strong>Homebrew</strong>. Homebrew is a package manager originally for the Mac but has been ported to Linux – Linuxbrew – it makes installing most open source software (like Node) as simple as writing <code>brew install node</code>. You can learn more about Homebrew at the <a href="http://brew.sh/">Homebrew website</a> and Linuxbrew at the <a href="http://brew.sh/linuxbrew">Linuxbrew website</a>. To install Homebrew for Linux open your terminal application and paste in the command <code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"</code>. Follow the instructions in the terminal to complete the installation process.</li>
+      <li><strong>Homebrew</strong>. Homebrew is a package manager originally for the Mac but has been ported to Linux – Linuxbrew – it makes installing most open source software (like Node) as simple as writing <code>brew install node</code>. You can learn more about Homebrew at the <a href="http://brew.sh/">Homebrew website</a> and Linuxbrew at the <a href="http://brew.sh/linuxbrew">Linuxbrew website</a>. To install Homebrew for Linux open your terminal application and paste in the command <code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"</code>. Follow the instructions in the terminal to complete the installation process.  </li>
     </ol>
   </li>
 </ul>
 
-<p>Once Linuxbrew is installed. You’ll need add to your <code>.bashrc</code> or <code>.zshrc</code> file the following 3 lines:</p>
+<p>Once Linuxbrew is installed. You’ll need add to your <code>.bashrc</code> or <code>.zshrc</code> file the following 3 lines:   </p>
 
 <p><code>
 export PATH="$HOME/.linuxbrew/bin:$PATH"

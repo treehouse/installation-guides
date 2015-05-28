@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Treehouse VM Installation Guide</title>
+  <title>Installing Jekyll on Mac</title>
   <meta name="description" content="Installation guides for common application development tools.">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
-  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/linux/treehouse-vm-linux.html">
+  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/mac/jekyll-mac.html">
   <link rel="alternate" type="application/rss+xml" title="Treehouse Installation Guides" href="treehouse.github.io/installation-guides//installation-guides/feed.xml" />
 </head>
 
@@ -57,125 +57,38 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Treehouse VM Installation Guide</h1>
+    <h1 class="post-title">Installing Jekyll on Mac</h1>
   </header>
 
   <article class="post-content">
-    <h2 id="what-is-the-treehouse-vm">What is the Treehouse VM?</h2>
-<p>The Treehouse Virtual Machine is a Vagrant controlled linux virtual machine. This VM is used in different Treehouse courses to facilitate the installation of Ruby on Rails and associated libraries and versions. Many of the VMs have the following installed:</p>
+    <h2 id="what-is-jekyll">What is Jekyll?</h2>
+<p><a href="http://jekyllrb.com/">Jekyll</a> is a blog-aware static site generator powered by Ruby. A static site generator takes a set templates and raw text files, runs it through a converter and renderer, then generates a plain HTML website that’s ready to publish on any web server.</p>
 
-<ul>
-  <li>Ruby</li>
-  <li>Ruby on Rails</li>
-  <li>MySQL</li>
-  <li>PostgreSQL</li>
-  <li>Sqlite3</li>
-  <li>Imagemagick</li>
-  <li>curl</li>
-</ul>
+<p>The blog-award part means that blogging is part of Jekyll’s functionality. We can publish and maintain a blog by simply managing a folder of text files. </p>
 
-<p>It is not necessary to use the VM to follow along with Ruby and Rails related Treehouse courses if you already have the libraries and prerequisites installed.</p>
+<p>With Jekyll, we can build a blog, a portfolio, or any website that has a series of post entries without having to depend on a database or content management system. That’s because Jekyll doesn’t require setting up a complex application on a web server like WordPress, Ruby on Rails, or Flask. Instead, all the development magic happens on your computer. When Jekyll is done, it gives you a set of regular web pages that you can upload to any server. </p>
 
-<h2 id="download-and-install-virtualbox">Download and Install VirtualBox</h2>
-<p>VirtualBox is free virtualization software. Head on over to the following address and download the <strong>latest</strong> version of VirtualBox and the <strong>VirtualBox Extension Pack</strong> for your Linux distribution:</p>
+<p><strong>The installation process is very straight forward:</strong></p>
 
-<ul>
-  <li><a href="https://www.virtualbox.org/wiki/Linux_Downloads">VirtualBox Downloads</a></li>
-</ul>
+<ol>
+  <li>
+    <p>The best way to install Jekyll is via <a href="https://rubygems.org/pages/download">RubyGems</a>. In your Terminal prompt, simply run the following command to install Jekyll on your Mac:</p>
 
-<p>Then proceed to install VirtualBox as you would any other software.</p>
+    <pre><code> gem install jekyll
+</code></pre>
 
-<h2 id="download-and-install-vagrant">Download and Install Vagrant</h2>
-<p>Vagrant is a piece of software used to control and install virtual machines. Download the latest version of Vagrant and install it as you would any other piece of software for your computer:</p>
+    <p>This command automatically installs all of Jekyll’s gem dependencies. That’s it!</p>
+  </li>
+  <li>
+    <p>To create a new Jekyll project, run the following command:</p>
 
-<ul>
-  <li><a href="http://www.vagrantup.com/downloads.html">Vagrant Downloads</a></li>
-</ul>
+    <pre><code> jekyll new project-name
+</code></pre>
+  </li>
+</ol>
 
-<p>Once you have finished this step, <strong>please reboot your computer</strong>.</p>
-
-<h2 id="download-the-treehouse-vm-files">Download the Treehouse VM Files</h2>
-
-<p>The final download necessary is the Treehouse VM specific to the course you are taking. Head over to the following site:</p>
-
-<ul>
-  <li><a href="http://vm.teamtreehouse.com/">Treehouse VM Downloads</a></li>
-</ul>
-
-<p>Select the course you are taking and download the appropriate virtual machine. This will contain only a zip file. Once you have the zip file, unzip it and follow along with the rest of this tutorial.</p>
-
-<h2 id="set-up-the-project">Set up the Project</h2>
-<p>Find the zip file where you downloaded the Treehouse VM and extract it. Remember the folder or directory where it was extracted. In your terminal, type the following to get to that folder:</p>
-
-<p><code>
-cd projects
-</code></p>
-
-<p>Now we can launch vagrant. Type the following:</p>
-
-<p><code>
-vagrant up
-</code></p>
-
-<p>That starts the virtual machine. If this is the first time you are running that specific virtual machine, it will need to be downloaded and configured.</p>
-
-<p>Once the virtual machine has downloaded, type the following:</p>
-
-<p><code>
-vagrant ssh
-</code></p>
-
-<p>That will put you inside of the virtual machine and you can proceed to follow along with the course. Great work!</p>
-
-<p>If you get any errors about shared folders, type the following:</p>
-
-<p><code>
-vagrant plugin install vagrant-vbguest
-</code></p>
-
-<p>Then <strong>reboot your computer</strong> and attempt the <code>vagrant up</code> section above again.</p>
-
-<p>To stop the virtual machine type the following:</p>
-
-<p><code>
-vagrant halt
-</code></p>
-
-<h2 id="setting-up-a-rails-application">Setting up a Rails Application</h2>
-<p>If you’re following a Rails related course, such as <em>Build a Rails API</em>, you need to follow just a few more steps to get everthing set up. Go back to your terminal and type the following:</p>
-
-<p><code>
-cd odot
-bundle
-bin/rake db:create:all
-touch config/secrets.yml
-</code></p>
-
-<p>The last command creates a file called <code>secrets.yml</code> in the config directory. We need to fill that out. Open that up in a text editor (<a href="http://sublimetext.com">Sublime Text</a> is a popular choice) and type the following:</p>
-
-<p><code>
-development:
-  secret_key_base:
-</code></p>
-
-<p>Now we have to generate a secret! Go back to the terminal application and type the following:</p>
-
-<p><code>
-bin/rake secret
-</code></p>
-
-<p>That will spit out a long stream of letters and numbers. Paste the results after the <code>secret_key_base: </code> and save the file.</p>
-
-<p>Go back to your terminal and type the following:</p>
-
-<p><code>
-bin/rake db:migrate
-</code></p>
-
-<p>Done!</p>
-
-<h2 id="getting-help">Getting Help</h2>
-<p>By following the steps above, you should now have the Treehouse VM installed. If you are having trouble, post in the <a href="http://teamtreehouse.com/forum">Treehouse Forum</a> with as many details as possible.</p>
+<h2 id="known-installation-issues">Known installation issues</h2>
+<p>There are currently no reported issues.  If you are having one, please report it in the <a href="https://teamtreehouse.com/forum/q:jekyll">Treehouse forum</a>.</p>
 
   </article>
 
