@@ -1,5 +1,5 @@
 # Treehouse Installation Guides
-This repository contains installation guides for common tools and software used for mobile and web application development. We host these guides publically at [http://treehouse.github.io/installation-guides/](http://treehouse.github.io/installation-guides/)
+This repository contains installation guides for common tools and software used for mobile and web application development. We host these guides publicly at [http://treehouse.github.io/installation-guides/](http://treehouse.github.io/installation-guides/)
 
 ## Contributing
 We encourage corrections, additions and other involvement in this project. Feel free to fork and post pull requests. 
