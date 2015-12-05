@@ -10,8 +10,6 @@ Android Studio is available at: [https://www.developer.android.com/sdk/index.htm
 
 ![](imgs/android/01.png)
 
-![](imgs/android/02.png)
-
 ![](imgs/android/03.png)
 
 ![](imgs/android/04.png)
