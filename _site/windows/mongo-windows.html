@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Treehouse Installation Guides</title>
+  <title>Installing MongoDB on Windows</title>
   <meta name="description" content="Installation guides for common application development tools.">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
-  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/">
+  <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/windows/mongo-windows.html">
   <link rel="alternate" type="application/rss+xml" title="Treehouse Installation Guides" href="treehouse.github.io/installation-guides//installation-guides/feed.xml" />
 </head>
 
@@ -54,59 +54,31 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <ul class="post-list">
-  <li><h2>Windows</h2>
-    <ul>
-      
-        <li><a href="/installation-guides/windows/intellij-idea-win.html">Installing IntelliJ IDEA on Windows</a></li>
-      
-        <li><a href="/installation-guides/windows/jdk-windows.html">Installing Java SE Development Kit on Windows</a></li>
-      
-        <li><a href="/installation-guides/windows/jekyll-windows.html">Installing Jekyll on Windows</a></li>
-      
-        <li><a href="/installation-guides/windows/mongo-windows.html">Installing MongoDB on Windows</a></li>
-      
-        <li><a href="/installation-guides/windows/node-windows.html">Installing Node.js® and NPM on Windows</a></li>
-      
-        <li><a href="/installation-guides/windows/treehouse-vm.html">Treehouse VM Installation Guide</a></li>
-      
-    </ul>
-  </li>
-  </ul>
-  <ul class="post-list">
-  <li><h2>Mac</h2>
-    <ul>
-      
-        <li><a href="/installation-guides/mac/intellij-idea-mac.html">Installing IntelliJ IDEA on Mac</a></li>
-      
-        <li><a href="/installation-guides/mac/jdk-mac.html">Installing Java SE Development Kit on Mac</a></li>
-      
-        <li><a href="/installation-guides/mac/jekyll-mac.html">Installing Jekyll on Mac</a></li>
-      
-        <li><a href="/installation-guides/mac/mongo-mac.html">Installing MongoDB on a Mac</a></li>
-      
-        <li><a href="/installation-guides/mac/node-mac.html">Installing Node.js® and NPM on Mac</a></li>
-      
-        <li><a href="/installation-guides/mac/treehouse-vm-mac.html">Treehouse VM Installation Guide</a></li>
-      
-    </ul>
-  </li>
-  </ul>
-  <ul class="post-list">
-  <li><h2>Linux</h2>
-    <ul>
-      
-        <li><a href="/installation-guides/linux/node-linux.html">Installing Node.js® and NPM on Linux</a></li>
-      
-        <li><a href="/installation-guides/linux/treehouse-vm-linux.html">Treehouse VM Installation Guide</a></li>
-      
-    </ul>
-  </li>
-  </ul>
+  <header class="post-header">
+    <h1 class="post-title">Installing MongoDB on Windows</h1>
+  </header>
 
-  <p class="rss-subscribe">subscribe <a href="/installation-guides/feed.xml">via RSS</a></p>
+  <article class="post-content">
+    <h2 id="whats-mongodb">What’s MongoDB?</h2>
+<p>MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which behave a lot like JSON objects in JavaScript.  Values in documents can be looked up by their field’s key.  Documents can have some fields/keys and not others, which makes Mongo extremely flexible.  </p>
+
+<p>This is different than SQL databases like MySQL and PostgreSQL, where fields correspond to columns in a table and individual records correspond to rows.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>You should have a general familiarity with the Windows command prompt.</p>
+
+<h2 id="installing-and-running-mongodb-on-a-windows-machine">Installing and Running MongoDB on a Windows Machine</h2>
+<ul>
+  <li><strong>Download the MongoDB installer file</strong> from the <a href="https://www.mongodb.org/downloads#production">downloads section</a> of the MongoDB website.</li>
+  <li><strong>Find the dowloaded .msi file in the Windows Explorer.</strong>  Double click the file and follow the prompts to install Mongo.  Unless you specify a customer directory <strong>Mongo is installed in the <code>C:\mongodb</code> directory</strong>.</li>
+  <li><strong>Create the directory where MongoDB will store it’s files.</strong>  From the command prompt run <code>md \data\db</code>.  This is the default location.  However, other locations can be specified using the <code>--dbpath</code> parameter.  See <a href="https://docs.mongodb.org/v3.0/tutorial/install-mongodb-on-windows/#set-up-the-mongodb-environment">the Mongo docs</a> for more information.</li>
+  <li><strong>Start the mongodb daemon</strong> by running <code>C:\mongodb\bin\mongod.exe</code> in the Command Prompt.</li>
+  <li><strong>Connect to MongoDB using the Mongo shell</strong> While the MongoDB daemon is running, from a different Command prompt window run <code>C:\mongodb\bin\mongod.exe</code></li>
+</ul>
+
+  </article>
 
 </div>
 
