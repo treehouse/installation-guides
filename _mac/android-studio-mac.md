@@ -6,7 +6,7 @@ categories: mac
 ---
 
 ## Installation
-Android Studio is available at: [https://www.developer.android.com/sdk/index.html](https://www.developer.android.com/sdk/index.html)
+Android Studio is available at: [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
 
 ![](imgs/android/01.png)
 
