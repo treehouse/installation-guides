@@ -15,7 +15,7 @@ NPM is installed when you install Node.js®
 * **You should have some familiarity with an application that lets you issue command line instructions.** For example, the Windows Command Prompt, PowerShell, [Cygwin](https://www.cygwin.com/), or the Git shell (which you get when you install [Github for Windows](https://windows.github.com/)). 
 
 ## Installation Overview
-Installing Node.js® and NPM is pretty straightforward using the installer package avaialble from the Node.js web site.
+Installing Node.js® and NPM is pretty straightforward using the installer package available from the Node.js web site.
 
 ## Installation Steps
 
