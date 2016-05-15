@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Installing MongoDB on a Mac</title>
-  <meta name="description" content="Installation guides for common application development tools.">
+  <meta name="description" content="What’s MongoDB?MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which be...">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
   <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/mac/mongo-mac.html">
@@ -62,7 +62,7 @@
 
   <article class="post-content">
     <h2 id="whats-mongodb">What’s MongoDB?</h2>
-<p>MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which behave a lot like JSON objects in JavaScript.  Values in documents can be looked up by their field’s key.  Documents can have some fields/keys and not others, which makes Mongo extremely flexible.  </p>
+<p>MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which behave a lot like JSON objects in JavaScript.  Values in documents can be looked up by their field’s key.  Documents can have some fields/keys and not others, which makes Mongo extremely flexible.</p>
 
 <p>This is different than SQL databases like MySQL and PostgreSQL, where fields correspond to columns in a table and individual records correspond to rows.</p>
 
@@ -71,7 +71,7 @@
   <li><strong>You should have some familiarity with the Mac Terminal application</strong> since you’ll need to use it to install and run MongoDB.</li>
   <li><strong>Dependencies.</strong> This guide goes over the two main ways to install MongoDB on a Mac.  One of the methods requires Homebrew/
     <ol>
-      <li><strong>Homebrew</strong>. Homebrew is a package manager for the Mac – it makes installing most open source software (like MongoDB) as simple as writing <code>brew install mongodb</code>. You can learn more about Homebrew at the <a href="http://brew.sh/">Homebrew website</a>. To install Homebrew just open Terminal and type <code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code>. You’ll see messages in the Terminal explaining what you need to do to complete the installation process.</li>
+      <li><strong>Homebrew</strong>. Homebrew is a package manager for the Mac – it makes installing most open source software (like MongoDB) as simple as writing <code class="highlighter-rouge">brew install mongodb</code>. Follow the instructions in the <a href="{homebrew">How to Install Homebrew on a Mac</a> instruction guide.</li>
     </ol>
   </li>
 </ul>
@@ -81,20 +81,21 @@
 
 <h2 id="install-and-run-mongodb-with-homebrew">Install and Run MongoDB with Homebrew</h2>
 <ul>
-  <li><strong>Open the Terminal app</strong> and type <code>brew update</code>.</li>
-  <li><strong>After updating Homebrew</strong> <code>brew install mongodb</code></li>
-  <li><strong>After downloading Mongo,</strong> create the “db” directory.  This is where the Mongo data files will live.  You can create the directory in the default location by running <code>mkdir -p /data/db</code></li>
+  <li><strong>Open the Terminal app</strong> and type <code class="highlighter-rouge">brew update</code>.</li>
+  <li><strong>After updating Homebrew</strong> <code class="highlighter-rouge">brew install mongodb</code></li>
+  <li><strong>After downloading Mongo,</strong> create the “db” directory.  This is where the Mongo data files will live.  You can create the directory in the default location by running <code class="highlighter-rouge">mkdir -p /data/db</code></li>
   <li>
-    <p><strong>Make sure that the <code>/data/db</code> directory has the right permissions</strong> by running</p>
+    <p><strong>Make sure that the <code class="highlighter-rouge">/data/db</code> directory has the right permissions</strong> by running</p>
 
-    <pre><code>&gt; sudo chown -R `id -un` /data/db
+    <div class="highlighter-rouge"><pre class="highlight"><code>&gt; sudo chown -R `id -un` /data/db
 &gt; # Enter your password
 </code></pre>
+    </div>
   </li>
-  <li><strong>Run the Mongo daemon</strong>, in one of your terminal windows run <code>mongod</code>.  This should start the Mongo server.  </li>
-  <li><strong>Run the Mongo shell</strong>, with the Mongo daemon running in one terminal, type <code>mongo</code> in another terminal window.  This will run the Mongo shell which is an application to access data in MongoDB.</li>
-  <li><strong>To exit the Mongo shell</strong> run <code>quit()</code></li>
-  <li><strong>To stop the Mongo daemon</strong> hit <code>ctrl-c</code></li>
+  <li><strong>Run the Mongo daemon</strong>, in one of your terminal windows run <code class="highlighter-rouge">mongod</code>.  This should start the Mongo server.</li>
+  <li><strong>Run the Mongo shell</strong>, with the Mongo daemon running in one terminal, type <code class="highlighter-rouge">mongo</code> in another terminal window.  This will run the Mongo shell which is an application to access data in MongoDB.</li>
+  <li><strong>To exit the Mongo shell</strong> run <code class="highlighter-rouge">quit()</code></li>
+  <li><strong>To stop the Mongo daemon</strong> hit <code class="highlighter-rouge">ctrl-c</code></li>
 </ul>
 
 <h2 id="install-and-run-mongodb-by-downloading-it-manually">Install and Run MongoDB by Downloading it Manually</h2>
@@ -103,9 +104,10 @@
   <li>
     <p><strong>After downloading Mongo</strong> move the gzipped tar file (the file with the extension .tgz that you downloaded) to the folder where you want Mongo installed.  In this case, we’ll say that we want Mongo to live in our home folder, and so the commands might look something like this:</p>
 
-    <pre><code>&gt; cd Downloads
+    <div class="highlighter-rouge"><pre class="highlight"><code>&gt; cd Downloads
 &gt; mv mongodb-osx-x86_64-3.0.7.tgz ~/
 </code></pre>
+    </div>
   </li>
   <li>
     <p><strong>Extract MongoDB from the the downloaded archive</strong>, and change the name of the directory to something more palatable:
@@ -113,18 +115,19 @@
     &gt; tar -zxvf mongodb-osx-x86_64-3.0.7.tgz
     &gt; mv mongodb-osx-x86_64-3.0.7 mongodb</p>
   </li>
-  <li><strong>Create the directory where Mongo will store data</strong>, create the “db” directory.  ou can create the directory in the default location by running <code>mkdir -p /data/db</code></li>
+  <li><strong>Create the directory where Mongo will store data</strong>, create the “db” directory.  ou can create the directory in the default location by running <code class="highlighter-rouge">mkdir -p /data/db</code></li>
   <li>
-    <p><strong>Make sure that the <code>/data/db</code> directory has the right permissions</strong> by running</p>
+    <p><strong>Make sure that the <code class="highlighter-rouge">/data/db</code> directory has the right permissions</strong> by running</p>
 
-    <pre><code>&gt; sudo chown -R `id -un` /data/db
+    <div class="highlighter-rouge"><pre class="highlight"><code>&gt; sudo chown -R `id -un` /data/db
 &gt; # Enter your password
 </code></pre>
+    </div>
   </li>
-  <li><strong>Run the Mongo daemon</strong>, in one terminal window run <code>~/mongodb/bin/mongod</code>.  This will start the Mongo server.  </li>
-  <li><strong>Run the Mongo shell</strong>, with the Mongo daemon running in one terminal, type <code>~/mongodb/bin/mongo</code> in another terminal window.  This will run the Mongo shell which is an application to access data in MongoDB.</li>
-  <li><strong>To exit the Mongo shell</strong> run <code>quit()</code></li>
-  <li><strong>To stop the Mongo daemon</strong> hit <code>ctrl-c</code></li>
+  <li><strong>Run the Mongo daemon</strong>, in one terminal window run <code class="highlighter-rouge">~/mongodb/bin/mongod</code>.  This will start the Mongo server.</li>
+  <li><strong>Run the Mongo shell</strong>, with the Mongo daemon running in one terminal, type <code class="highlighter-rouge">~/mongodb/bin/mongo</code> in another terminal window.  This will run the Mongo shell which is an application to access data in MongoDB.</li>
+  <li><strong>To exit the Mongo shell</strong> run <code class="highlighter-rouge">quit()</code></li>
+  <li><strong>To stop the Mongo daemon</strong> hit <code class="highlighter-rouge">ctrl-c</code></li>
 </ul>
 
   </article>

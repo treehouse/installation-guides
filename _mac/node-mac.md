@@ -16,7 +16,7 @@ Although there is a Mac installer program on the Node website, we recommend usin
 ## Prerequisites
 * **You should have some familiarity with the Mac Terminal application** since you'll need to use it to install and test Node and NPM. You'll also need the Terminal to use Node.js and NPM. The Terminal application is located in the Utilities folder in the Applications folder.
 * **Dependencies.** Although you can install Node in other ways, we recommend using Homebrew. Homebrew lets you avoid possible security problems associated with using the `sudo` command to install software like Node and Node modules.
-  * **Install Homebrew**. Follow the steps on the [How to Install Homebrew on a Mac]({% post_url homebrew %}) instruction guide to install Homebrew. 
+  * **Install Homebrew**. Follow the steps on the [How to Install Homebrew on a Mac](homebrew) instruction guide to install Homebrew. 
 
 ## Installation Overview
 Installing Node.js® and NPM is pretty straightforward using Homebrew. Homebrew handles downloading, unpacking and installing Node and NPM on your system. The whole process (after you have Homebrew installed) should only take you a few minutes.

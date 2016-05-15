@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Installing Jekyll on Windows</title>
-  <meta name="description" content="Installation guides for common application development tools.">
+  <meta name="description" content="What is Jekyll?Jekyll is a blog-aware static site generator powered by Ruby. A static site generator takes a set templates and raw text files, runs it throug...">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
   <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/windows/jekyll-windows.html">
@@ -64,21 +64,21 @@
     <h2 id="what-is-jekyll">What is Jekyll?</h2>
 <p><a href="http://jekyllrb.com/">Jekyll</a> is a blog-aware static site generator powered by Ruby. A static site generator takes a set templates and raw text files, runs it through a converter and renderer, then generates a plain HTML website that’s ready to publish on any web server.</p>
 
-<p>The blog-award part means that blogging is part of Jekyll’s functionality. We can publish and maintain a blog by simply managing a folder of text files. </p>
+<p>The blog-award part means that blogging is part of Jekyll’s functionality. We can publish and maintain a blog by simply managing a folder of text files.</p>
 
-<p>With Jekyll, we can build a blog, a portfolio, or any website that has a series of post entries without having to depend on a database or content management system. That’s because Jekyll doesn’t require setting up a complex application on a web server like WordPress, Ruby on Rails, or Flask. Instead, all the development magic happens on your computer. When Jekyll is done, it gives you a set of regular web pages that you can upload to any server. </p>
+<p>With Jekyll, we can build a blog, a portfolio, or any website that has a series of post entries without having to depend on a database or content management system. That’s because Jekyll doesn’t require setting up a complex application on a web server like WordPress, Ruby on Rails, or Flask. Instead, all the development magic happens on your computer. When Jekyll is done, it gives you a set of regular web pages that you can upload to any server.</p>
 
-<h4 id="jekyll-on-windows">Jekyll on Windows</h4>
+<p>####Jekyll on Windows</p>
 
 <p>While Windows is not an officially-supported platform, it can be used to run Jekyll with the proper tweaks.The installation process is very straight forward.</p>
 
-<h4 id="install-ruby">Install Ruby</h4>
+<p>####Install Ruby</p>
 
 <ol>
   <li>
     <p>Download and install <a href="http://rubyinstaller.org/downloads/">the latest RubyInstaller</a> for your version of Windows. Execute the installer and go through the steps of the installation. When you get to the screen below, make sure to check the “Add Ruby executables to your PATH” box.</p>
 
-    <p><img src="imgs/jekyll-install-ruby.png" alt="" />  </p>
+    <p><img src="imgs/jekyll-install-ruby.png" alt="" /></p>
 
     <p>Click Install and Ruby will be installed within seconds.</p>
   </li>
@@ -86,39 +86,43 @@
     <p><a href="http://rubyinstaller.org/downloads/">Download the Ruby DevKit</a> matching the version of Ruby you installed.</p>
   </li>
   <li>
-    <p>When you execute the file, it’ll ask you for a destination for the files. Enter a path that has no spaces in it. Like this: <code>DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe</code> to <code>C:\RubyDevKit</code>.</p>
+    <p>When you execute the file, it’ll ask you for a destination for the files. Enter a path that has no spaces in it. Like this: <code class="highlighter-rouge">DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe</code> to <code class="highlighter-rouge">C:\RubyDevKit</code>.</p>
 
-    <p><img src="imgs/jekyll-extract-ruby-devkit.png" alt="" />  </p>
+    <p><img src="imgs/jekyll-extract-ruby-devkit.png" alt="" /></p>
   </li>
   <li>
-    <p>Locate the Ruby <code>2.0.0-p598-x64 folder</code> in the Windows Start Menu and open <code>Start Command Prompt with Ruby</code></p>
+    <p>Locate the Ruby <code class="highlighter-rouge">2.0.0-p598-x64 folder</code> in the Windows Start Menu and open <code class="highlighter-rouge">Start Command Prompt with Ruby</code></p>
   </li>
   <li>
     <p>Initialize the DevKit and bind it to your Ruby installation. Open your command line tool and navigate to the folder you extracted the DevKit into.</p>
 
-    <pre><code> cd C:\RubyDevKit  
+    <div class="highlighter-rouge"><pre class="highlight"><code> cd C:\RubyDevKit  
 </code></pre>
+    </div>
 
     <p>Auto-detect Ruby installations and add them to a configuration file for the next step.</p>
 
-    <pre><code> ruby dk.rb init  
+    <div class="highlighter-rouge"><pre class="highlight"><code> ruby dk.rb init  
 </code></pre>
+    </div>
 
     <p>Install the DevKit, binding it to your Ruby installation.</p>
 
-    <pre><code> ruby dk.rb install  
+    <div class="highlighter-rouge"><pre class="highlight"><code> ruby dk.rb install  
 </code></pre>
+    </div>
 
-    <p><img src="imgs/jekyll-install-devkit.png" alt="" />  </p>
+    <p><img src="imgs/jekyll-install-devkit.png" alt="" /></p>
   </li>
 </ol>
 
-<h4 id="install-jekyll">Install Jekyll</h4>
+<p>####Install Jekyll</p>
 
 <p>To install Jekyll and all its default dependencies, launch your command line tool and enter the following command:</p>
 
-<pre><code>gem install jekyll
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install jekyll
 </code></pre>
+</div>
 
 <h2 id="known-installation-issues">Known installation issues</h2>
 <p>There are currently no reported issues.  If you are having one, please report it in the <a href="https://teamtreehouse.com/forum/q:jekyll">Treehouse forum</a>.</p>

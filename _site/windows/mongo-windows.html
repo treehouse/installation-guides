@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Installing MongoDB on Windows</title>
-  <meta name="description" content="Installation guides for common application development tools.">
+  <meta name="description" content="What’s MongoDB?MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which be...">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
   <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/windows/mongo-windows.html">
@@ -62,7 +62,7 @@
 
   <article class="post-content">
     <h2 id="whats-mongodb">What’s MongoDB?</h2>
-<p>MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which behave a lot like JSON objects in JavaScript.  Values in documents can be looked up by their field’s key.  Documents can have some fields/keys and not others, which makes Mongo extremely flexible.  </p>
+<p>MongoDB is a document database which belongs to a family of databases called NoSQL - not only SQL.  In MongoDB, records are documents which behave a lot like JSON objects in JavaScript.  Values in documents can be looked up by their field’s key.  Documents can have some fields/keys and not others, which makes Mongo extremely flexible.</p>
 
 <p>This is different than SQL databases like MySQL and PostgreSQL, where fields correspond to columns in a table and individual records correspond to rows.</p>
 
@@ -70,12 +70,23 @@
 <p>You should have a general familiarity with the Windows command prompt.</p>
 
 <h2 id="installing-and-running-mongodb-on-a-windows-machine">Installing and Running MongoDB on a Windows Machine</h2>
+
 <ul>
-  <li><strong>Download the MongoDB installer file</strong> from the <a href="https://www.mongodb.org/downloads#production">downloads section</a> of the MongoDB website.</li>
-  <li><strong>Find the dowloaded .msi file in the Windows Explorer.</strong>  Double click the file and follow the prompts to install Mongo.  Unless you specify a customer directory <strong>Mongo is installed in the <code>C:\mongodb</code> directory</strong>.</li>
-  <li><strong>Create the directory where MongoDB will store it’s files.</strong>  From the command prompt run <code>md \data\db</code>.  This is the default location.  However, other locations can be specified using the <code>--dbpath</code> parameter.  See <a href="https://docs.mongodb.org/v3.0/tutorial/install-mongodb-on-windows/#set-up-the-mongodb-environment">the Mongo docs</a> for more information.</li>
-  <li><strong>Start the mongodb daemon</strong> by running <code>C:\mongodb\bin\mongod.exe</code> in the Command Prompt.</li>
-  <li><strong>Connect to MongoDB using the Mongo shell</strong> While the MongoDB daemon is running, from a different Command prompt window run <code>C:\mongodb\bin\mongod.exe</code></li>
+  <li>
+    <p><strong>Download the MongoDB installer file</strong> from the <a href="https://www.mongodb.org/downloads#production">downloads section</a> of the MongoDB website.</p>
+  </li>
+  <li>
+    <p><strong>Find the dowloaded .msi file in the Windows Explorer.</strong>  Double click the file and follow the prompts to install Mongo.  <strong>Note:</strong> unless you specify a custom directory Mongo is most likely installed in the <code class="highlighter-rouge">C:\mongodb</code> directory**.  However, based on settings on your machine Mongo may be installed other places.  For example, <code class="highlighter-rouge">C:\Program Files\MongoDB\Server\3.2</code>.  Additionally, you may find MongoDB in the add/remove programs menu.</p>
+  </li>
+  <li>
+    <p><strong>Create the directory where MongoDB will store it’s files.</strong>  From the command prompt run <code class="highlighter-rouge">md \data\db</code>.  This is the default location.  However, other locations can be specified using the <code class="highlighter-rouge">--dbpath</code> parameter.  See <a href="https://docs.mongodb.org/v3.0/tutorial/install-mongodb-on-windows/#set-up-the-mongodb-environment">the Mongo docs</a> for more information.</p>
+  </li>
+  <li>
+    <p><strong>Start the mongodb daemon</strong> by running <code class="highlighter-rouge">C:\mongodb\bin\mongod.exe</code> in the Command Prompt.  Or by running, <code class="highlighter-rouge">C:\path\to\mongodb\bin\mongod.exe</code></p>
+  </li>
+  <li>
+    <p><strong>Connect to MongoDB using the Mongo shell</strong> While the MongoDB daemon is running, from a different Command prompt window run <code class="highlighter-rouge">C:\mongodb\bin\mongo.exe</code></p>
+  </li>
 </ul>
 
   </article>

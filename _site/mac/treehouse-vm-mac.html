@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Treehouse VM Installation Guide</title>
-  <meta name="description" content="Installation guides for common application development tools.">
+  <meta name="description" content="What is the Treehouse VM?The Treehouse Virtual Machine is a Vagrant controlled linux virtual machine. This VM is used in different Treehouse courses to facil...">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
   <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/mac/treehouse-vm-mac.html">
@@ -117,70 +117,70 @@
 <h2 id="set-up-the-project">Set up the Project</h2>
 <p>So you’ve completed the steps above and have the vm zip file downloaded? Great! You’re almost there. Find the zip file where you downloaded the Treehouse VM and extract it. Remember the folder or directory where it was extracted. In your terminal, type the following to get to that folder:</p>
 
-<p><code>
-cd projects
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>cd projects
+</code></pre>
+</div>
 
 <p>Now we can launch vagrant. Type the following:</p>
 
-<p><code>
-vagrant up
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant up
+</code></pre>
+</div>
 
 <p>That starts the virtual machine. If this is the first time you are running that specific virtual machine, it will need to be downloaded and configured.</p>
 
 <p>Once the virtual machine has downloaded, type the following:</p>
 
-<p><code>
-vagrant ssh
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant ssh
+</code></pre>
+</div>
 
 <p>That will put you inside of the virtual machine and you can proceed to follow along with the course. Great work!</p>
 
 <p>If you get any errors about shared folders, type the following:</p>
 
-<p><code>
-vagrant plugin install vagrant-vbguest
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant plugin install vagrant-vbguest
+</code></pre>
+</div>
 
-<p>Then <strong>reboot your computer</strong> and attempt the <code>vagrant up</code> section above again.</p>
+<p>Then <strong>reboot your computer</strong> and attempt the <code class="highlighter-rouge">vagrant up</code> section above again.</p>
 
 <p>To stop the virtual machine type the following:</p>
 
-<p><code>
-vagrant halt
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>vagrant halt
+</code></pre>
+</div>
 
 <h2 id="setting-up-a-rails-application">Setting up a Rails Application</h2>
 <p>If you’re following a Rails related course, such as <em>Build a Rails API</em>, you need to follow just a few more steps to get everthing set up. Go back to your terminal and type the following:</p>
 
-<p><code>
-cd odot
+<div class="highlighter-rouge"><pre class="highlight"><code>cd odot
 bundle
 bin/rake db:create:all
 touch config/secrets.yml
-</code></p>
+</code></pre>
+</div>
 
-<p>The last command creates a file called <code>secrets.yml</code> in the config directory. We need to fill that out. Open that up in a text editor (<a href="http://sublimetext.com">Sublime Text</a> is a popular choice) and type the following:</p>
+<p>The last command creates a file called <code class="highlighter-rouge">secrets.yml</code> in the config directory. We need to fill that out. Open that up in a text editor (<a href="http://sublimetext.com">Sublime Text</a> is a popular choice) and type the following:</p>
 
-<p><code>
-development:
+<div class="highlighter-rouge"><pre class="highlight"><code>development:
   secret_key_base:
-</code></p>
+</code></pre>
+</div>
 
 <p>Now we have to generate a secret! Go back to the terminal application and type the following:</p>
 
-<p><code>
-bin/rake secret
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>bin/rake secret
+</code></pre>
+</div>
 
-<p>That will spit out a long stream of letters and numbers. Paste the results after the <code>secret_key_base: </code> and save the file.</p>
+<p>That will spit out a long stream of letters and numbers. Paste the results after the <code class="highlighter-rouge">secret_key_base: </code> and save the file.</p>
 
 <p>Go back to your terminal and type the following:</p>
 
-<p><code>
-bin/rake db:migrate
-</code></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>bin/rake db:migrate
+</code></pre>
+</div>
 
 <p>Done!</p>
 

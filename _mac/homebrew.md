@@ -18,7 +18,7 @@ Installing Homebrew is straightforward as long as you understand the Mac Termina
 
 ## Installation Steps
 * **Open the Terminal app**.
-* **Type `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.** You'll see messages in the Terminal explaining what you need to do to complete the installation process. You can learn more about Homebrew at the [Homebrew website](http://brew.sh/).
+* **Type** `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` You'll see messages in the Terminal explaining what you need to do to complete the installation process. You can learn more about Homebrew at the [Homebrew website](http://brew.sh/).
 
 ## How to Update Homebrew
 New versions of Homebrew come out frequently, so make sure you update it before updating any of the other software components that you've installed using Homebrew.
@@ -26,4 +26,4 @@ New versions of Homebrew come out frequently, so make sure you update it before 
 
 ## How to Uninstall Homebrew
 * **Open the Terminal app**
-* **Type `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"`** This downloads and runs the uninstaller script. Follow the instructions and Homebrew will be removed from your computer.
+* **Type** `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"` This downloads and runs the uninstaller script. Follow the instructions and Homebrew will be removed from your computer.

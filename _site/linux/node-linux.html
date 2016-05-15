@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Installing Node.js® and NPM on Linux</title>
-  <meta name="description" content="Installation guides for common application development tools.">
+  <meta name="description" content="What’s Node.js®  and NPM?Node.js® is a JavaScript-based environment which you can use to create web-servers and networked applications. You can also use it t...">
 
   <link rel="stylesheet" href="/installation-guides/css/main.css">
   <link rel="canonical" href="treehouse.github.io/installation-guides//installation-guides/linux/node-linux.html">
@@ -71,33 +71,33 @@
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
   <li><strong>You should have some familiarity with the Linux terminal</strong> since you’ll need to use it to install and test Node and NPM. You’ll also need the terminal to use Node.js and NPM.</li>
-  <li><strong>Dependencies.</strong> You need to install a number of dependancies before you can install Node.js and NPM. 
+  <li><strong>Dependencies.</strong> You need to install a number of dependancies before you can install Node.js and NPM.
     <ol>
-      <li><strong>Ruby</strong> and <strong>GCC</strong>. You’ll need Ruby 1.8.6 or newer and GCC 4.2 or newer. 
+      <li><strong>Ruby</strong> and <strong>GCC</strong>. You’ll need Ruby 1.8.6 or newer and GCC 4.2 or newer.
         <ul>
-          <li>For <strong>Ubuntu</strong> or <strong>Debian</strong> based Linux distributions run the following command in your terminal <code>sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev</code> and select Y to continue and wait for the packages to be installed.  </li>
-          <li>For <strong>Fedora</strong> based Linux distributions run the following command in your terminal application <code>sudo yum groupinstall 'Development Tools' &amp;&amp; sudo yum install curl git m4 ruby texinfo bzip2-devel curl-devel expat-devel ncurses-devel zlib-devel</code>and select Y to continue and wait for the packages to be installed.  </li>
+          <li>For <strong>Ubuntu</strong> or <strong>Debian</strong> based Linux distributions run the following command in your terminal <code class="highlighter-rouge">sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev</code> and select Y to continue and wait for the packages to be installed.</li>
+          <li>For <strong>Fedora</strong> based Linux distributions run the following command in your terminal application <code class="highlighter-rouge">sudo yum groupinstall 'Development Tools' &amp;&amp; sudo yum install curl git m4 ruby texinfo bzip2-devel curl-devel expat-devel ncurses-devel zlib-devel</code>and select Y to continue and wait for the packages to be installed.</li>
         </ul>
       </li>
-      <li><strong>Homebrew</strong>. Homebrew is a package manager originally for the Mac but has been ported to Linux – Linuxbrew – it makes installing most open source software (like Node) as simple as writing <code>brew install node</code>. You can learn more about Homebrew at the <a href="http://brew.sh/">Homebrew website</a> and Linuxbrew at the <a href="http://brew.sh/linuxbrew">Linuxbrew website</a>. To install Homebrew for Linux open your terminal application and paste in the command <code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"</code>. Follow the instructions in the terminal to complete the installation process.  </li>
+      <li><strong>Homebrew</strong>. Homebrew is a package manager originally for the Mac but has been ported to Linux – Linuxbrew – it makes installing most open source software (like Node) as simple as writing <code class="highlighter-rouge">brew install node</code>. You can learn more about Homebrew at the <a href="http://brew.sh/">Homebrew website</a> and Linuxbrew at the <a href="http://brew.sh/linuxbrew">Linuxbrew website</a>. To install Homebrew for Linux open your terminal application and paste in the command <code class="highlighter-rouge">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"</code>. Follow the instructions in the terminal to complete the installation process.</li>
     </ol>
   </li>
 </ul>
 
-<p>Once Linuxbrew is installed. You’ll need add to your <code>.bashrc</code> or <code>.zshrc</code> file the following 3 lines:   </p>
+<p>Once Linuxbrew is installed. You’ll need add to your <code class="highlighter-rouge">.bashrc</code> or <code class="highlighter-rouge">.zshrc</code> file the following 3 lines:</p>
 
-<p><code>
-export PATH="$HOME/.linuxbrew/bin:$PATH"
+<div class="highlighter-rouge"><pre class="highlight"><code>export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-</code></p>
+</code></pre>
+</div>
 
 <h2 id="installation-overview">Installation Overview</h2>
 <p>Installing Node.js® and NPM is pretty straightforward using Linuxbrew, the Linux port of Homebrew. It handles downloading, unpacking, compiling and installing Node and NPM on your system. The whole process (after you have Linuxbrew installed) should only take you a few minutes.</p>
 
 <h2 id="installation-steps">Installation Steps</h2>
 <ul>
-  <li><strong>Open up your terminal</strong> and type <code>brew install node</code>.</li>
+  <li><strong>Open up your terminal</strong> and type <code class="highlighter-rouge">brew install node</code>.</li>
   <li><strong>Sit back and wait.</strong> Homebrew has to download some files, compile and install them. But that’s it.</li>
 </ul>
 
@@ -105,8 +105,8 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 <p>Make sure you have Node and NPM installed by running simple commands to see what version of each is installed:</p>
 
 <ul>
-  <li><strong>Test Node.js.</strong> To see if Node.js is installed, type <code>node -v</code> in Terminal. This should print the version number so you’ll see something like this <code>v0.10.35</code>.</li>
-  <li><strong>Test NPM.</strong> To see if NPM is installed, type <code>npm -v</code> in Terminal. This should print the version number so you’ll see something like this <code>2.1.17</code></li>
+  <li><strong>Test Node.js.</strong> To see if Node.js is installed, type <code class="highlighter-rouge">node -v</code> in Terminal. This should print the version number so you’ll see something like this <code class="highlighter-rouge">v0.10.35</code>.</li>
+  <li><strong>Test NPM.</strong> To see if NPM is installed, type <code class="highlighter-rouge">npm -v</code> in Terminal. This should print the version number so you’ll see something like this <code class="highlighter-rouge">2.1.17</code></li>
 </ul>
 
 <p><img src="imgs/node-install-check.png" alt="" /></p>
@@ -116,14 +116,14 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
 <ol>
   <li>Make sure Homebrew has the latest version of the Node package. In Terminal type 
-<code>brew update</code></li>
-  <li>Upgrade Node: <code>brew upgrade node</code></li>
+<code class="highlighter-rouge">brew update</code></li>
+  <li>Upgrade Node: <code class="highlighter-rouge">brew upgrade node</code></li>
 </ol>
 
 <h2 id="how-to-uninstall-node-and-npm">How to Uninstall Node and NPM</h2>
 <p>You can use Homebrew to uninstall packages that it installed:</p>
 
-<p><code>brew uninstall node</code></p>
+<p><code class="highlighter-rouge">brew uninstall node</code></p>
 
   </article>
 
