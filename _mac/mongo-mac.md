@@ -43,7 +43,7 @@ There are two primary ways to install MongoDB on a Mac.  The best way to install
       > tar -zxvf mongodb-osx-x86_64-3.0.7.tgz
       > mv mongodb-osx-x86_64-3.0.7 mongodb
 
-* **Create the directory where Mongo will store data**, create the "db" directory.  ou can create the directory in the default location by running `mkdir -p /data/db`
+* **Create the directory where Mongo will store data**, create the "db" directory.  ou can create the directory in the default location by running `sudo mkdir -p /data/db`
 * **Make sure that the `/data/db` directory has the right permissions** by running
 
       > sudo chown -R `id -un` /data/db
