@@ -4,11 +4,14 @@ layout: default
 
 <div class="home">
 
+  {% assign blog_url = "https://blog.teamtreehouse.com/" %}
+
   <ul class="post-list">
   <li><h2>Windows</h2>
     <ul>
       {% for guide in site.windows %}
-        <li><a href="{{ site.baseurl }}{{ guide.url }}">{{ guide.title }}</a></li>
+        {% assign slug = guide.title | downcase | remove: "®" | replace: ".", "-" | replace: " ", "-" %}
+        <li><a href="{{ blog_url }}{{ slug }}" target="_blank">{{ guide.title }}</a></li>
       {% endfor %}
     </ul>
   </li>
@@ -17,7 +20,8 @@ layout: default
   <li><h2>Mac</h2>
     <ul>
       {% for guide in site.mac %}
-        <li><a href="{{ site.baseurl }}{{ guide.url }}">{{ guide.title }}</a></li>
+        {% assign slug = guide.title | downcase | remove: "®" | replace: ".", "-" | replace: " ", "-" %}
+        <li><a href="{{ blog_url }}{{ slug }}" target="_blank">{{ guide.title }}</a></li>
       {% endfor %}
     </ul>
   </li>
@@ -26,12 +30,13 @@ layout: default
   <li><h2>Linux</h2>
     <ul>
       {% for guide in site.linux %}
-        <li><a href="{{ site.baseurl }}{{ guide.url }}">{{ guide.title }}</a></li>
+        {% assign slug = guide.title | downcase | remove: "®" | replace: ".", "-" | replace: " ", "-" %}
+        <li><a href="{{ blog_url }}{{ slug }}" target="_blank">{{ guide.title }}</a></li>
       {% endfor %}
     </ul>
   </li>
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Installing MongoDB on a Mac"
+title:  "Installing MongoDB on Mac"
 date:   2015-12-28 12:00:00
 categories: mac
 ---
@@ -11,11 +11,11 @@ This is different than SQL databases like MySQL and PostgreSQL, where fields cor
 
 ## Prerequisites
 * **You should have some familiarity with the Mac Terminal application** since you'll need to use it to install and run MongoDB.
-* **Dependencies.** This guide goes over the two main ways to install MongoDB on a Mac.  One of the methods requires Homebrew.
-  * **Homebrew**. Homebrew is a package manager for the Mac -- it makes installing most open source software (like MongoDB) as simple as writing `brew install mongodb`. Follow the instructions in the [How to Install Homebrew on a Mac](homebrew) instruction guide.
+* **Dependencies.** This guide goes over the two main ways to install MongoDB on Mac.  One of the methods requires Homebrew.
+  * **Homebrew**. Homebrew is a package manager for the Mac -- it makes installing most open source software (like MongoDB) as simple as writing `brew install mongodb`. Follow the instructions in the [How to Install Homebrew on Mac](homebrew) instruction guide.
 
 ## Installation Overview
-There are two primary ways to install MongoDB on a Mac.  The best way to install MongoDB is with Homebrew.  The other way to install MongoDB is by downloading it from the the [MongoDB website](https://www.mongodb.org/downloads#production).
+There are two primary ways to install MongoDB on Mac.  The best way to install MongoDB is with Homebrew.  The other way to install MongoDB is by downloading it from the the [MongoDB website](https://www.mongodb.org/downloads#production).
 
 ## Install and Run MongoDB with Homebrew
 * **Open the Terminal app** and type `brew update`.

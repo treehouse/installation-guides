@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Installing Homebrew on a Mac"
+title:  "Installing Homebrew on Mac"
 date:   2016-05-14 13:31:00
 categories: mac
 ---
