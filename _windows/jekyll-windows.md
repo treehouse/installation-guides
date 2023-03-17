@@ -12,11 +12,11 @@ The blog-award part means that blogging is part of Jekyll’s functionality. We 
 
 With Jekyll, we can build a blog, a portfolio, or any website that has a series of post entries without having to depend on a database or content management system. That's because Jekyll doesn't require setting up a complex application on a web server like WordPress, Ruby on Rails, or Flask. Instead, all the development magic happens on your computer. When Jekyll is done, it gives you a set of regular web pages that you can upload to any server. 
 
-####Jekyll on Windows
+#### Jekyll on Windows
 
 While Windows is not an officially-supported platform, it can be used to run Jekyll with the proper tweaks.The installation process is very straight forward.
 
-####Install Ruby
+#### Install Ruby
 
 1. Download and install [the latest RubyInstaller](http://rubyinstaller.org/downloads/) for your version of Windows. Execute the installer and go through the steps of the installation. When you get to the screen below, make sure to check the “Add Ruby executables to your PATH” box.
 
@@ -46,7 +46,7 @@ While Windows is not an officially-supported platform, it can be used to run Jek
 
     ![](imgs/jekyll-install-devkit.png)  
 
-####Install Jekyll
+#### Install Jekyll
 
  To install Jekyll and all its default dependencies, launch your command line tool and enter the following command:
 
